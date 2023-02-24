@@ -7,7 +7,7 @@ RUN apt-get update && \
 # Download and extract Tor Browser
 RUN curl -L https://www.torproject.org/dist/torbrowser/12.0.3/tor-browser-linux64-12.0.3_ALL.tar.xz -o tor.tar.xz && \
     tar -xJf tor.tar.xz && \
-    mv tor-browser_en-US /opt/tor-browser && \
+    mv tor-browser_* /opt/tor-browser && \
     rm tor.tar.xz
 
 # Create desktop entry
